@@ -7,7 +7,7 @@ CREATE DATABASE burgers_db;
 -- Specifies db for use
 USE burgers_db;
 
--- Create the table tasks.
+-- Create the burgers table inside burgers_db
 CREATE TABLE burgers (
     -- Numeric ID column which will increment its default value with each new row
     id INT NOT NULL AUTO_INCREMENT,

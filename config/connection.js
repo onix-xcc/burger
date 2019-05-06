@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 // Function that connects Node to MySQL db
 connection.connect(function(err) {
     if (err) {
-        cl("Connection error: " + err.stack);
+        console.error("Connection error: " + err.stack);
         return;
     }
     cl("Connected as id " + connection.threadId);
