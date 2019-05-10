@@ -7,6 +7,7 @@ var cl = console.log;
 // Connection credentials to MySQL database. 
 var connection = mysql.createConnection({
     host: "localhost",
+    port: 3306,
     user: "root",
 
     // Don't forget to put in the password later to test app out!
@@ -18,8 +19,8 @@ var connection = mysql.createConnection({
 // Function that connects Node to MySQL db
 connection.connect(function(err) {
     if (err) {
-        console.error("Connection error: " + err.stack);
-        return;
+      console.error("error connecting: " + err.stack);
+      return;
     }
     cl("Connected as id " + connection.threadId);
 });
