@@ -16,7 +16,7 @@ CREATE TABLE burgers (
     burger_name VARCHAR(255) NOT NULL,
 
     -- Creates a boolean stating if it was a burger that was eaten or not
-    devoured BOOL DEFAULT false,
+    devoured BOOLEAN DEFAULT false,
 
     -- Sets id as this table's primary key which means all data contained within it will be unique
     PRIMARY KEY (id)

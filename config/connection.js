@@ -4,17 +4,23 @@ var mysql = require("mysql");
 // Shortcut variables to save me some typing
 var cl = console.log;
 
+var connection;
+
+if(process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
 // Connection credentials to MySQL database. 
-var connection = mysql.createConnection({
+  connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
 
     // Don't forget to put in the password later to test app out!
-    password: "",
+    password: "4l0h0m0r4",
 
     database: "burgers_db"
 });
+};
 
 // Function that connects Node to MySQL db
 connection.connect(function(err) {

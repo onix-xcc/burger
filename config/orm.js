@@ -44,17 +44,75 @@ function objToSql(ob) {
 }
   
 
-// CREATE FUNCTIONS
+// Create functions that displays or makes changes to the burgers_db
 var orm = {
 
     // Display burger data on burger_db 
-    selectAll();
+    selectAll: function (table, cb) {
+      var queryString = "SELECT * FROM " + table + ";";
+  
+      connection.query(queryString, function (err, result) {
+        if (err) {
+          throw err;
+        }
+        cb(result);
+      });
+    },
     
-    insertOne();
+    // Adds a burger entry to the burgers_db table
+    insertOne: function (table, cols, vals, cb) {
+      var queryString = "INSERT INTO " + table;
+      queryString += " (";
+      queryString += cols.toString();
+      queryString += ") ";
+      queryString += "VALUES (";
+      queryString += printQuestionMarks(vals.length);
+      queryString += ") ";
+  
+      cl(queryString);
+  
+      connection.query(queryString, vals, function (err, result) {
+        if (err) {
+          throw err
+        }
+        cb(result);
+      });
+    },
     
-    updateOne();
+    // Sets the burger as devoured in the burgers_db table
+    updateOne: function (table, objColVals, condition, cb) {
+      var queryString = "UPDATE " + table;
+      queryString += " SET ";
+      queryString += objToSql(objColVals);
+      queryString += " WHERE ";
+      queryString += condition;
+  
+      cl(queryString);
+  
+      connection.query(queryString, function (err, result) {
+        if (err) {
+          throw err
+        }
+        cb(result);
+      });
+    },
 
-}
+    // Deletes the burger from the burgers_db table
+    deleteOne: function (table, condition, cb) {
+      var queryString = "DELETE FROM " + table;
+      queryString += " WHERE ";
+      queryString += condition;
+  
+      cl(queryString);
+  
+      connection.query(queryString, function (err, result) {
+        if (err) {
+          throw err
+        }
+        cb(result);
+      });
+    }
+};
 
 // Export the ORM
 module.exports = orm;
