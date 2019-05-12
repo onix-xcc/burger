@@ -71,10 +71,10 @@ burger
 
 2-<img width="960" alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/eatDaBurgerInstructions.gif">
 
-#Under the Hood 
+# Under the Hood 
 
 Meanwhile in the MySQL database table
-![Results](/public/assets/img/readme-scrshts/mySQLdbInAction.gif)
+<img width="960" alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/mySQLdbInAction.gif">
 * Notice as to when the burger is added on the website it creates an entry in the database table.
 * When pressing the utensils icon the burger database value of devoured goes from 0 to 1 to change it's devoured value from false to true.
 * When pressing the trash icon, the burger is removed from the table altogether.
