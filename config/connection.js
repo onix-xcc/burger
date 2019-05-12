@@ -12,9 +12,7 @@ if(process.env.JAWSDB_URL){
 // Connection credentials to MySQL database. 
   connection = mysql.createConnection({
     host: "localhost",
-    port: 3306,
     user: "root",
-
     // Don't forget to put in the password later to test app out!
     password: "4l0h0m0r4",
 
