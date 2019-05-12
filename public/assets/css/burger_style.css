@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url("../img/BurgerBackground.png");
+    background-image: url("../img/burgerBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url("../img/burgerSimplebackground.jpg");
+    background-image: url("../img/burgerSimpleBackground.jpg");
     background-size: cover;
 }
 

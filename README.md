@@ -1,6 +1,10 @@
 # burger
 Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat and log them by using MySQL, Node, Express, and Handlebars in an MVC pattern.
 
+# Links
+Heroku link: 
+Github repo:
+
 
 # Requirements
 
@@ -33,18 +37,21 @@ burger
 ├── node_modules
 │ 
 ├── public
-│   ├── assets
-│   │	├── css
-│   │   │   └── burger_style.css
-|   |   |
-│   │   ├── img
-│   │   │   └── burger.png
-|   |   |   └── burgerBackground.png
-|   |   |
-│   │   └── js
-│   │   	 └── burgers.js
-│   │
-│   └── test.html
+│   └── assets
+│    	├── css
+│       │   └── burger_style.css
+|       |
+│       ├── img
+|       |   ├── readme-screens
+|       |   |   ├──eatDaBurgerInstructions.gif
+|       |   |   └──mySQLdbInAction.gif
+|       |   |
+│       │   ├── burgerFavIcon.png
+|       |   ├── BurgerBackground.png
+|       |   └── burgerSimpleBackground.png
+|       |
+│       └── js
+│       	 └── burgers.js
 │
 ├── views
 |   ├── index.handlebars
@@ -57,4 +64,21 @@ burger
 │
 └── server.js
 ```
+
+# Instructions
+
+1- Open Heroku link or download/clone repository locally(if so, make sure to install the packages required for it to work).
+2-![Results](/public/assets/img/readme-scrshts/eatDaBurgerInstructions.gif)
+
+
+#Under the Hood 
+
+Meanwhile in the MySQL database table
+![Results](/public/assets/img/readme-scrshts/mySQLdbInAction.gif)
+* Notice as to when the burger is added on the website it creates an entry in the database table.
+* When pressing the utensils icon the burger database value of devoured goes from 0 to 1 to change it's devoured value from false to true.
+* When pressing the trash icon, the burger is removed from the table altogether.
+
+
+
 
