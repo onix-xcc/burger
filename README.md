@@ -68,8 +68,8 @@ burger
 # Instructions
 
 1- Open Heroku link or download/clone repository locally(if so, make sure to install the packages required for it to work).
-2-![Results](/public/assets/img/readme-scrshts/eatDaBurgerInstructions.gif)
 
+2-<img width="960" alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/eatDaBurgerInstructions.gif">
 
 #Under the Hood 
 
