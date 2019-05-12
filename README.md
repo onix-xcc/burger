@@ -69,12 +69,12 @@ burger
 
 1- Open Heroku link or download/clone repository locally(if so, make sure to install the packages required for it to work).
 
-2-<img width="960" alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/eatDaBurgerInstructions.gif">
+2-<img width="960" alt="EatDaBurger" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/eatDaBurgerInstructions.gif">
 
 # Under the Hood 
 
 Meanwhile in the MySQL database table
-<img width="960" alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/mySQLdbInAction.gif">
+<img alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/mySQLdbInAction.gif">
 * Notice as to when the burger is added on the website it creates an entry in the database table.
 * When pressing the utensils icon the burger database value of devoured goes from 0 to 1 to change it's devoured value from false to true.
 * When pressing the trash icon, the burger is removed from the table altogether.
