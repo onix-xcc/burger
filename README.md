@@ -2,7 +2,8 @@
 Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat and log them by using MySQL, Node, Express, and Handlebars in an MVC pattern.
 
 # Links
-Heroku link: 
+Heroku link:
+
 Github repo:
 
 
@@ -74,7 +75,9 @@ burger
 # Under the Hood 
 
 Meanwhile in the MySQL database table
+
 <img alt="mysql" src="https://raw.githubusercontent.com/onix-xcc/burger/master/public/assets/img/readme-screens/mySQLdbInAction.gif">
+
 * Notice as to when the burger is added on the website it creates an entry in the database table.
 * When pressing the utensils icon the burger database value of devoured goes from 0 to 1 to change it's devoured value from false to true.
 * When pressing the trash icon, the burger is removed from the table altogether.
