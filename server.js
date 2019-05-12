@@ -8,7 +8,7 @@ var burgerApp= express();
 
 
 // Serve static content for the app from the "public" directory in the application directory.
-burgerApp.use(express.static(__dirname + "/public"));
+burgerApp.use(express.static("public"));
 
 // Parse application body as JSON
 burgerApp.use(express.urlencoded({ extended: true }));
@@ -21,7 +21,7 @@ burgerApp.engine("handlebars", exphbs({ defaultLayout: "main" }));
 burgerApp.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/burgers_controller");
 
 burgerApp.use(routes);
 
