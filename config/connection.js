@@ -14,7 +14,7 @@ if(process.env.JAWSDB_URL){
     host: "localhost",
     user: "root",
     // Don't forget to put in the password later to test app out locally!
-    password: "",
+    password: "4l0h0m0r4",
 
     database: "burgers_db"
 });
