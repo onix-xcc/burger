@@ -49,7 +49,7 @@ burger
 |       |   └── burgerSimpleBackground.png
 |       |
 │       └── js
-│       	 └── burgers.js
+│           └── burgers.js
 │
 ├── views
 |   ├── index.handlebars
