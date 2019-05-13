@@ -55,7 +55,6 @@ burger
 |   ├── index.handlebars
 |   │
 |   └── layouts
-|       |
 |       └── main.handlebars
 |
 ├── package.json
